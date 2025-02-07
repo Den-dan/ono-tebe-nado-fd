@@ -12,96 +12,90 @@
   <body>
     <header class="header">
 
-      <nav class="menu">
       
-        <a>главная</a>
-        <span class="circle">○</span>
-        <a href="#lots">посмотреть лоты</a>
-        <span class="circle">○</span>
-        <a href="#about">об аукционе</a>
+        <ul class="menu-list">
+          <li><a>главная</a></li>
+          <span class="circle">○</span>
+          <li><a href="#lots"> посмотреть лоты</a></li>
+          <span class="circle">○</span>
+          <li><a href="#about"> об аукционе</a></li>
+        </ul>
 
-      </nav>
 
-      <a href="#" style="max-width: 150px;"><img
+      <a href="#" class="logo-style">
+      <img
       class="logo"
       src="./images/logo-black.svg"
       alt="webpage logo"
       />
       </a>
 
-      <nav class="contacts">
+      <address class="contacts">
 
         <a href="tel:+70000000">+7(000)000-00-00</a>
         <a href="mailto:mail@example.com">mail@example.com</a>
-        <address>наб. Принсенграхт 263- 265, Амстердам</address>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
 
-      </nav>
+      </address>
 
     </header>
-
-      <section>
-        <div class="cover"></div>
-
-        <div class="background" style="background-image: url('images/cover.jpg');">
-
-            <div class="title">
-              <h1 class="ono">ОНО</h1>
-              <h1 class="tebe">ТЕБЕ</h1>
-            </div>
-            <h1 class="nado">НАДО</h1>
-
-              <div class="description">
-                <h1 class="subline">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</h1>
-                <h1 class="button">СДЕЛАТЬ СТАВКУ</h1>
-              </div>
-
-        </div>
-      </section>
-
     <main>
 
-      <section id="lots">
-        <ul class="lots">
+      <section class="cover">
+        <div class="overlay"></div>
 
-          <li>
-            <div class="title2">
-              <h1>ЛОТЫ</h1>
+            <h1 class="title">
+              <span class="word1">ОНО</span>
+              <span class="word2">ТЕБЕ</span>
+              <span class="word3">НАДО</span>
+            </h1>
+
+            <div class="description">
+              <p class="subline">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
+              <a class="button">СДЕЛАТЬ СТАВКУ</a>
             </div>
-          </li>
-          <li>
-            <div class="cards">
-            
-              <div class="frame1-background" style="background-image: url('images/card-lot-01.jpg');">
-                <div class="frame1">
-                  <a href="#" class="mini-title">Фильм режиссёра, который бросил киношколу</a>
-                  <p class="content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-                </div>
-              </div>
-
-              <div class="frame2-background" style="background-image: url('images/card-lot-02.jpg');">
-                <div class="frame2">
-                  <a href="#" class="mini-title">Книга, где описан один скучный день из жизни рекламного агента</a>
-                  <p class="content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-                </div>
-              </div>
-
-              <div class="frame3-background" style="background-image: url('images/card-lot-03.jpg');">
-                <div class="frame3">
-                  <a href="#" class="mini-title">Картина, которую повторит даже 5-летний сын маминой подруги</a>
-                  <p class="content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="more">
-              <a href="#about">посмотреть больше</a>
-            </div>
-          </li>
-          
-
-        </ul>
       </section>
+
+      <ul class="lots" id="lots">
+          <h2 class="lots__title">ЛОТЫ</h2>
+      
+          <ul class="lots__cards-list">
+            <li class="lots__card-list-item">
+              <a href="#" class="card-link">
+                <article class="card card_type_film">
+                  <div class="card_overlay"></div>
+                  <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                  <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                </article>
+              </a>
+            </li>        
+      
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_book">
+                <div class="card_overlay"></div>
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </article>
+            </a>
+          </li>
+      
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_painting">
+                <div class="card_overlay"></div>
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+      
+        <li>
+            <a class="more" href="#about">посмотреть больше</a>
+        </li>
+      </ul>
+
 
       <section class="about" id="about">
         <div class="logo-column">
@@ -110,50 +104,50 @@
             alt="the logo of a web page on a dark background"
           />
         </div>
-        <ul class="about-column">
-          <li><h1 class="title3">ОБ АУКЦИОНЕ</h1></li>
-          <li>
+        <div class="about-column">
+          <h2 class="about-title">ОБ АУКЦИОНЕ</h2>
             <div class="description-block">
-              <p style="max-width: 688px;">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+              <p class="about-mini-title">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
               <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
             на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
             </div>
-          </li>
-        </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
-    <section class="footer-info">
-      <nav class="contacts2">
+    <footer class="footer-info">
+      <address class="contacts2">
 
         <a href="tel:+70000000">+7(000)000-00-00</a>
         <a href="mailto:mail@example.com">mail@example.com</a>
-        <address>наб. Принсенграхт 263- 265, Амстердам</address>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
 
-      </nav>
+      </address>
 
-      <nav class="menu2">
-      
-        <a>главная</a>
-        <a href="#lots">посмотреть лоты</a>
-        <a href="#about">об аукционе</a>
+      <ul class="menu-list2">
+        <li><a>главная</a></li>
+        <li><a href="#lots"> посмотреть лоты</a></li>
+        <li><a href="#about"> об аукционе</a></li>
+      </ul>
 
-      </nav>
-
-        <div class="socials">
-          <img
+      <ul class="socials">
+        <li>
+          <img class="socials-images"
           src="images/yt.svg"
           alt="youtube logo"/>
           <img
+        </li>
+        <li>
+          <img class="socials-images"
           src="images/vk.svg"
           alt="vk logo"/>
-          <img
+        </li>
+        <li><img class="socials-images"
           src="images/pinterest.svg"
           alt="pinterest logo"/>
-        </div>
+        </li>
+      </ul>
 
-    </section>
     </footer>
   </body>
 </html>
