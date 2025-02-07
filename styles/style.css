@@ -8,24 +8,32 @@
 }
 
 .menu-list {
-    width: 371.48px;
+    min-width: 391.48px;
 }
 
-.menu-list-container {
+.menu-list ul {
     display: flex;
-    font-size: 18px;
-    justify-content: space-between;
     list-style: circle;
+    gap: 32px;
+}
+
+.header-link {
+    font-size: 18px;
+    font-weight: 400;
     text-underline-offset: 3px;
 }
 
-.menu-list-container li:first-child {
+.header-link-active {
+    text-decoration: none;
+}
+
+.menu-list ul li:first-child {
     list-style: none; 
 }
 
- .logo-style {
+.logo-style {
     max-width: 150px;
- }
+}
 
 .logo {
     width: 148px;
@@ -35,30 +43,29 @@
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     max-width: 240px;
     font-size: 18px;
     text-underline-offset: 4px;
-    align-self: flex-start;
-}
-
-.overlay {
-    background-color: rgb(0, 0, 0, 0.6);
-    min-height: 757px;
-    width: 1100px;
-    position: absolute;
+    font-style: normal;
 }
 
 .cover {
     margin-top: 95px;
     display: grid;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background: url(../images/cover.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     justify-items: center; 
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
 }
 
 .title {
@@ -72,29 +79,30 @@
     width: 1000px;
     margin-top: 165px;
     margin-bottom: 106px;
+    gap: 16px;
 }
 
-.word1 {
+.aligned-text {
     justify-self: start;
 }
 
-.letter1 {
+.no-letter-spacing {
     letter-spacing: 0px;
 }
 
-.word2 {
+.aligned-text-center {
     justify-self: center;
 }
 
-.letter2 {
+.no-letter-spacing-center {
     letter-spacing: 0px;
 }
 
-.word3 {
+.aligned-text-right {
     justify-self: end;
 }
 
-.letter3 {
+.no-letter-spacing-right {
     letter-spacing: 0px;
 }
 
@@ -112,7 +120,7 @@
     font-size: 22px;
     font-weight: 400;
     color: white;
-    word-spacing: 22px;
+    word-spacing: 19px;
 }
 
 .button {
@@ -146,9 +154,10 @@ ul {
 .lots__cards-list {
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
     align-self: center;
     min-width: 1052px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -187,15 +196,6 @@ ul {
     position: relative;
 }
 
-.card_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .card__title {
     color: white;
     max-width: 254px;
@@ -213,7 +213,7 @@ ul {
     font-weight: 400;
     max-width: 254px;
     margin-top: auto; 
-    margin-bottom: 48px; 
+    margin-bottom: 52px; 
     z-index: 1;
 }
 
@@ -244,7 +244,7 @@ ul {
     justify-content: center;
 }
 
-.logo2 {
+.logo-about {
     width: 148px;
     height: 114px;
 }
@@ -255,7 +255,6 @@ ul {
     max-width: 693px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .about-title {
@@ -264,38 +263,51 @@ ul {
     font-weight: 700;
 }
 
-.description-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 400px;
-    line-height: 24px;
+.description-block { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 24px;
+    width: 100%; 
+    font-size: 20px; 
+    font-weight: 400px; 
+    line-height: 24px; 
+    max-width: 693px;
 }
 
 .about-mini-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     max-width: 688px;
-    margin-bottom: 24px;
+}
+
+.about-mini-bottom-title {
+    max-width: 693px;
 }
 
 .footer-info {
     margin-left: 50px;
+    margin-bottom: 82px;
     margin-top: 180px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000px;
-    justify-content: space-between;
 }
 
-.contacts2 {
-    max-width: 240px;
+.footer-contacts {
+    justify-self: start;
+    max-width: 264.57px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     font-size: 18px;
-    font-weight: 400px;
     text-underline-offset: 4px;
+    font-style: normal;
+
 }
 
-.menu-list2 {
-    width: 163.9px;
+.footer-menu-list {
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,7 +316,18 @@ ul {
     text-underline-offset: 3px;
 }
 
+.footer-link {
+    font-size: 18px;
+    font-weight: 400;
+    text-underline-offset: 3px;
+}
+
+.footer-link-active {
+    text-decoration: none;
+}
+
 .socials {
+    justify-self: end;
     width: 240px;
     height: 48px;
     display: flex;
