@@ -13,13 +13,13 @@
     <header class="header">
 
       
-        <ul class="menu-list">
-          <li><a>главная</a></li>
-          <span class="circle">○</span>
-          <li><a href="#lots"> посмотреть лоты</a></li>
-          <span class="circle">○</span>
-          <li><a href="#about"> об аукционе</a></li>
-        </ul>
+        <nav class="menu-list">
+          <ul class="menu-list-container">
+            <li><a class="header-link-active">главная</a></li>
+            <li><a href="#lots">посмотреть лоты</a></li>
+            <li><a href="#about">об аукционе</a></li>
+          </ul>
+        </nav>
 
 
       <a href="#" class="logo-style">
@@ -56,7 +56,7 @@
             </div>
       </section>
 
-      <ul class="lots" id="lots">
+      <section class="lots" id="lots">
           <h2 class="lots__title">ЛОТЫ</h2>
       
           <ul class="lots__cards-list">
@@ -91,10 +91,8 @@
           </li>
         </ul>
       
-        <li>
             <a class="more" href="#about">посмотреть больше</a>
-        </li>
-      </ul>
+      </section>
 
 
       <section class="about" id="about">
@@ -133,16 +131,16 @@
       <ul class="socials">
         <li>
           <img class="socials-images"
-          src="images/yt.svg"
-          alt="youtube logo"/>
-          <img
+            src="images/yt.svg"
+            alt="youtube logo"/>
         </li>
         <li>
           <img class="socials-images"
-          src="images/vk.svg"
-          alt="vk logo"/>
+            src="images/vk.svg"
+            alt="vk logo"/>
         </li>
-        <li><img class="socials-images"
+        <li>
+        <img class="socials-images"
           src="images/pinterest.svg"
           alt="pinterest logo"/>
         </li>
